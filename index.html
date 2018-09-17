@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+<head>
+	 <title>Test::Assignment</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+     <!-- Character Set -->
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <!-- http-equiv -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE,chrome=1">
+    <!-- Veiw Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <!--Open Sans Google API Font-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Bottstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all">
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/global.css" media="all">  
+
+</head>
+<body>
+
+<header class="header" id="myHeader">
+	<div class="container">
+    	<div class="row nopad">
+        	<div class="col-lg-12 col-sm-12 col-xs-12">
+            	<div class="col-lg-2 col-sm-3 col-xs-3">
+                     <img  src="images/logo.png" alt="logo" title="logo">
+                </div>
+                <div class="col-lg-10 col-sm-9 col-xs-9 navbar">
+
+                    <ul>
+                        <li><img  src="images/facebook.png" alt="facebook" title="facebook"></li>
+                        <li><img  src="images/twitter.png" alt="twitter" title="twitter"></li>
+                        <li><img  src="images/instagram.png" alt="instagram" title="instagram"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--End Header-->
+<!--Banner-->
+<section class="banner_section">
+    <div class="banner_content">
+        <h1>it’s your body. it matters.</h1>
+        <!-- <p>Let me know when you launch </p> -->
+      
+        
+        <div class="input-group banner-addon">
+            <input placeholder="Let me know when you launch" type="" name="">
+            <span class="input-group-addons">
+                <img src="images/arrow.png" alt="arrow" title="arrow">
+            </span>
+        </div>
+
+      <div class="banner_Bottom_content">
+        <p>Are you a  <mark>snappy writer,</mark>  <mark>business looking for corporate wellness,</mark>  or a  <mark>brand trying to target health conscious indians?</mark></p>  
+        
+
+      </div>
+        <div class="imgarrow_sec">
+            <img src="images/down_arrow.png" class="down_Arrow" alt="down_arrow" title="down_arrow">
+        </div>
+
+    </div>    
+</section> 
+<!--End Banner-->    
+<section class="snappyWriter" id="snappyWriter1">
+    <div class="col-lg-9  col-sm-12 col-xs-12 snappyWriter_left">
+        <h3>Are you a...</h3>
+        <p>Snappy writer who can</p><p> make eating celery sound </p><p>like fun?</p>
+     </div>
+    <div class="col-lg-3  col-sm-12 col-xs-12 snappyWriter_right">
+        <span><img src="images/snapy_user.png" alt="snapy_user" title="snapy_user"></span>
+        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+        <ul>
+            <li>Excepteur sint occaecat cupidatat non </li>
+            <li>Proident, sunt in culpa qui officia </li>
+            <li>Eserunt mollit anim id est laborum. <li>
+
+        </ul>
+        <button>Contact Us</button>
+    </div>
+
+</section>
+<section class="snappyWriter">
+    <div class="col-lg-3  col-sm-12 col-xs-12 snappyWriter_right">
+        <span><img src="images/snapy_doble_user.png" alt="snapy_user" title="snapy_user"></span>
+        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+        <ul>
+            <li>Excepteur sint occaecat cupidatat non </li>
+            <li>Proident, sunt in culpa qui officia </li>
+            <li>Eserunt mollit anim id est laborum. <li>
+
+        </ul>
+        <button>Contact Us</button>
+    </div>
+    <div class="col-lg-9  col-sm-12 col-xs-12 snappyWriter_left doubleUser">
+            <h3>Are you a...</h3>
+            <p>Business looking to bring</p><p>some health and welness</p><p>into your teams?</p>
+         </div>
+</section>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+
+$(function()
+{
+        $('.banner_section, .snappyWriter') .css({'height': (($(window).height()) - 0)+'px'});
+    
+        $(window).bind('resize', function(){
+            $('.banner_section, .snappyWriter') .css({'height': (($(window).height()) - 0)+'px'});
+            
+        });
+});
+
+
+</script>
+<script type="text/javascript">
+
+$(".down_Arrow").on('click',function() {
+    $('html, body').animate({
+        'scrollTop' : $("#snappyWriter1").position().top
+    });
+});
+
+</script>
+
+</body>
+</html>
